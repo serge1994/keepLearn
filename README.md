@@ -1,12 +1,14 @@
 # keepLearn
 学习知识点
 
-# Java
+## Java基础
+|Java基础|
+|--------|
+|[Java基础](src/java/base.md)|
 
+## Flink
 
-# Flink
-
-## 数据库 ##
+## 数据库
 
 > 关系型数据库文章以MySQL为主
 
@@ -14,7 +16,7 @@
 | :------:| :------: | 
 | [关系型数据库(MySQL/Oracle)](src/database.md) | [Redis从零单排](src/redis.md) | 
 
-## 大数据组件 ##
+## 大数据组件
 
 | HBASE优化 | spark调度模式 | MapReduce | 流计算 | kafka | 数仓调度系统 | kylin的调优 | carbondata |
 | :------:| :------: | :------:| :------: | :------:| :------: | :------:| :------:|
