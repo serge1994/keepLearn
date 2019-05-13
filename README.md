@@ -29,9 +29,9 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
 
 ## 大数据组件 ##
 
-| HBASE优化 | spark调度模式 | MapReduce | 流计算 | kafka | 数仓调度系统 | 
-| :------:| :------: | :------:| :------: | :------:| :------: | 
-| [HBASE优化](src/hbase.md) | [spark调度模式](src/spark.md) | [MapReduce](src/MR.md) | [流计算](src/real.md) | [kafka](src/kafka.md) | [数仓调度系统](src/数仓调度系统.md) | 
+| HBASE优化 | spark调度模式 | MapReduce | 流计算 | kafka | 数仓调度系统 | kylin的调优 | carbondata |
+| :------:| :------: | :------:| :------: | :------:| :------: | :------:| :------:|
+| [HBASE优化](src/hbase.md) | [spark调度模式](src/spark.md) | [MapReduce](src/MR.md) | [流计算](src/real.md) | [kafka](src/kafka.md) | [数仓调度系统](src/数仓调度系统.md) | [kylin的调优](src/kylin.md) | [carbondata](src/carbondata.md) |
 
 面试：
 ```
