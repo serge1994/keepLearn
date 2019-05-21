@@ -40,7 +40,8 @@ rdd dataframe  dataset区别
 
 - 袋鼠云：
 数据增量etl
-SQL数据倾斜处理方式
+SQL数据倾斜处理方式：mapjoin？
+mapjoin的限制
 什么时候设计分区表，非分区表
 
 小影提前准备知识点：
