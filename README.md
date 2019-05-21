@@ -30,6 +30,21 @@ MapReduce
 理论知识
 kafka 流计算
 数仓调度系统 及意义
+
+- 蒲公英科技
+Linux的查看资源消耗
+kafka反压机制
+流计算做checkpoint不是最好的解决方案
+计算集群优化
+rdd dataframe  dataset区别
+
+- 袋鼠云：
+数据增量etl
+SQL数据倾斜处理方式
+什么时候设计分区表，非分区表
+
+小影提前准备知识点：
+数仓理论知识，数仓模型设计 ads  ods  dwd  dws层 ，星星模型雪花模型，缓慢变化维
 ```
  
 
