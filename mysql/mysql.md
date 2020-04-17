@@ -1,0 +1,5 @@
+mysql binlog
+
+SHOW VARIABLES LIKE 'log_bin';
+
+SHOW BINLOG EVENTS;
