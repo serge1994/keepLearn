@@ -115,3 +115,8 @@ hql表类型为managed，但通过hql建表元数据目前无法通过数栈管�
 
 
 
+# hive truncate table知识点
+
+Truncate table partition数据会删除，hdfs文件夹(分区)不会删除
+
+alter table drop  partition 删除数据文件且删除metadata。
