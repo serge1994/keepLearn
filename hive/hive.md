@@ -1,3 +1,5 @@
+
+
 ![image-20191229141147643](/Users/admin/Library/Application Support/typora-user-images/image-20191229141147643.png)
 
 # HIVE RegexSerDe使用详解
@@ -76,13 +78,26 @@ https://blog.csdn.net/l1028386804/article/details/88617592
 
 # hive beeline 连接操作
 
-opt/dtstack/Hadoop/thriftserver/bin/beeline
+- Spark thrift(em里spark thriftserver) : 默认!connect jdbc:hive2://xxx.xx.xx.xx:8191
 
-Spark thrift(em里spark thriftserver) : !connect jdbc:hive2://xxx.xx.xx.xx:8191
+```
+hive.server2.thrift.port 值为准确端口号，可在em里查找thriftserver服务的hive-site配置文件
+```
 
-em里Hive metastore(hive server2.thrift) : !connect jdbc:hive2://xxx.xx.xx.xx:10004
+> Error: Could not open client transport with JDBC Uri: jdbc:hive2://172.16.101.237:10000: Could not establish connection to jdbc:hive2://172.16.101.237:10000: Required field 'client_protocol' is unset! Struct:TOpenSessionReq(client_protocol:null, configuration:{use:database=default}) (state=08S01,code=0)
+>
+> 若连接报错，是 hive-jdbc的version 和hive Server的version不一致，切换使用opt/dtstack/Hadoop/thriftserver/bin/beeline客户端。Driver: Hive JDBC (version 1.2.1.spark2)
 
+- em里Hive metastore的hive-site配置文件中(hive.server2.thrift.port端口) :默认 !connect jdbc:hive2://172.16.100.119:10004
 
+> /opt/dtstack/Hadoop/hivemetastore/bin/beeline客户端。Beeline version 2.1.1 by Apache Hive
+
+- beeline 退出
+
+```shell
+beeline> !quit 
+[root@app1 bin]# 
+```
 
 # hql、sparksql指定location建表的区别
 

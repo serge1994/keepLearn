@@ -122,3 +122,30 @@ mr代码里指定了mapper，reducer，但还是要传给main方法三个参数
 
 - [告警不生效的问题未解决，青火持续查看](https://dtstack.yuque.com/dtsupport/kc538g/eq54ss#00a8cc75)
 
+
+
+
+
+![image-20200721201718461](https://tva1.sinaimg.cn/large/007S8ZIlly1ggyuyhivo0j31g50u0jwq.jpg)![image-20200721202014659](https://tva1.sinaimg.cn/large/007S8ZIlly1ggyv0kjq03j31g50u01ir.jpg)spark 逻辑计划优化，RBO？基于规则优化
+
+物理计划优化 CBO,选择最优的物理计划,基于成本优化
+
+核心catalyst模块:
+
+parse:解析,生成逻辑计划
+
+analyzer:语法解析sqlbaseparse.java,词法解析sqlbaselexer.java
+
+optimizer:RBO 谓词下推，列剪枝，常量替换，常量计算
+
+![image-20200721205748716](https://tva1.sinaimg.cn/large/007S8ZIlly1ggywdd5ukrj31hf0u07c3.jpg)
+
+planner:CBO.   Spark2.3以后引入
+
+
+
+其他：
+
+Reducebykey  -》先在map端join
+
+spark的sqlbase.g4  可查所有支持的sql语法
